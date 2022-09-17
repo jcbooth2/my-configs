@@ -1,5 +1,12 @@
 [aws]
+symbol = "  "
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
 
 [cmake]
 format = '\[[$symbol($version)]($style)\]'
@@ -41,6 +48,7 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
 
 [git_branch]
+symbol = " "
 format = '\[[$symbol$branch]($style)\]'
 
 [git_status]
@@ -57,6 +65,10 @@ format = '\[[$symbol($version)]($style)\]'
 
 [hg_branch]
 format = '\[[$symbol$branch]($style)\]'
+
+[hostname]
+ssh_symbol = "🌐"
+format = '\[[$ssh_symbol$hostname]\]'
 
 [java]
 format = '\[[$symbol($version)]($style)\]'
@@ -107,6 +119,7 @@ format = '\[[$symbol$stack]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
 
 [python]
+symbol = " "
 format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
 
 [red]
